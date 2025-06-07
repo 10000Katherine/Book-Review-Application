@@ -1,0 +1,96 @@
+### 测试服务器连接
+GET http://localhost:8080/
+
+### Task 1: 获取所有图书
+GET http://localhost:8080/
+
+###
+
+### Task 2: 根据 ISBN 获取图书详情
+GET http://localhost:5000/isbn/1
+
+###
+
+### Task 2 测试不同的 ISBN
+GET http://localhost:5000/isbn/2
+
+###
+
+### Task 2 测试不存在的 ISBN
+GET http://localhost:5000/isbn/999
+
+
+### Task 3: 根据作者获取图书
+GET http://localhost:5000/author/Chinua Achebe
+
+###
+
+### Task 3 测试不同作者
+GET http://localhost:5000/author/Hans Christian Andersen
+
+###
+
+### Task 3 测试不存在的作者
+GET http://localhost:5000/author/Unknown Author
+
+###
+
+### Task 3 测试大小写不敏感
+GET http://localhost:5000/author/chinua achebe
+
+### Task 4: 根据标题获取图书
+GET http://localhost:5000/title/Things Fall Apart
+
+###
+
+### Task 4 测试不同标题
+GET http://localhost:5000/title/Fairy tales
+
+###
+
+### Task 4 测试不存在的标题
+GET http://localhost:5000/title/Unknown Book
+
+###
+
+### Task 4 测试大小写不敏感
+GET http://localhost:5000/title/things fall apart
+
+
+### Task 5: 获取图书评论
+GET http://localhost:5000/review/1
+
+###
+
+### Task 5 测试不同的 ISBN
+GET http://localhost:5000/review/2
+
+###
+
+### Task 5 测试不存在的 ISBN
+GET http://localhost:5000/review/999
+
+### 测试服务器连接
+GET http://localhost:8080/
+
+###
+
+### Task 6: 用户注册
+POST http://localhost:8080/customer/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpass123"
+}
+
+###
+
+### Task 7: 用户登录
+POST http://localhost:8080/customer/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpass123"
+}
